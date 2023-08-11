@@ -44,7 +44,6 @@ app.post("/form", async (req, res) => {
 
     console.log(response);
     res.status(200).json(response);
-    res.status(200).json("Is working 🔥");
   } catch (error) {
     res.status(400).json({ message: error.message });
   }
