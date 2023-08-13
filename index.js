@@ -53,7 +53,6 @@ app.all("*", (req, res) => {
   return res.status(404).json("Cette route n'existe pas");
 });
 
-const PORT = 3000;
-app.listen(PORT, () => {
+app.listen(process.env.PORT, () => {
   console.log("Server started on port 💡 " + PORT);
 });
